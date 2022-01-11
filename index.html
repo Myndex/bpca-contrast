@@ -3,14 +3,18 @@
 <head>
 
 <meta charset="utf-8" />
-<title>Contrast Ratio: Easily calculate color contrast ratios. Passing WCAG was never this easy!</title>
+<title>Contrast Calamity! Calibrating Cleverly Created Content Closely Calculating Color Contrast</title>
 <link rel="stylesheet" href="style.css" />
 <link rel="shortcut icon"  type="image/png" href="about:blank" />
 
 </head>
 <body>
 
-<h1><a href="#"><div><span>Contrast</span></div> <div><strong>ratio</strong></div></a></h1>
+<p style="color:#a0a0a0;font-weight: normal; text-shadow: 1px 1px 2px #2468; line-height: 1.2;">
+    Contrast Calamity!<br>
+    Calibrating Cleverly Created Content<br>
+    Closely Calculating Color Contrast 
+<h1><a href="#"><div><span>Lc Contr</span></div> <div><strong>ast Value</strong></div></a></h1>
 
 <label class="background">
 	<span>Background:</span>
@@ -20,7 +24,7 @@
 
 <label class="foreground">
 	<span>Text color:</span>
-	<input id="foreground" value="hsla(200,0%,0%,.7)" />
+	<input id="foreground" value="hsla(200,0%,0%,1.0)" />
 	<output for="background foreground" class="rl" aria-live="polite" aria-label="Relative Luminance"></output>
 </label>
 
@@ -31,23 +35,26 @@
 
 <section id="results">
 	<output for="background foreground" id="preciseContrast" aria-label="Precise contrast"></output>
-	<output for="background foreground" id="wcag"></output>
+	<output for="background foreground" id="bpca"></output>
 </section>
 
 <section class="color-display" id="backgroundDisplay">
 	<h1>How to use</h1>
-	<p>As you type, the contrast ratio indicated will update. Hover over the circle to get more detailed information. When semi-transparent colors are involved as backgrounds, the contrast ratio will have an error margin, to account for the different colors they may be over.</p>
-	<p style="font-family: Garamond, 'Palatino Linotype', Georgia, serif;">This sample text attempts to visually demonstrate how readable this color combination is, for normal, <span style="font-style: italic;">italic</span>, <span style="font-weight: bold;">bold</span>, or <span style="font-style: italic; font-weight: bold;">bold italic</span> text of various sizes and font styles.</p>
+	<p>As you type, the contrast ratio indicated will update. Hover over the circle to get more detailed information. With alpha on backgrounds, the contrast value will indicate an error margin.</p>
+	<p style="font-size: 18px; font-family: Baskerville, Garamond, 'Palatino Linotype', Georgia, serif;">
+    This 18px serif text visually demonstrates<br>
+    how readable this color combination is, <br>
+    for normal, <span style="font-style: italic;">italic</span>, <span style="font-weight: bold;">bold</span>, or <span style="font-style: italic; font-weight: bold;">bold italic</span><br>
+    text of various sizes and font styles.</p>
 	<p style="font-size: 11pt;"><strong>Hint:</strong> Press the up and down keyboard arrows while over a number inside a functional color notation. Watch it increment/decrement. Try with the Shift or Alt key too!</p>
 	<footer>
-		By <a href="http://lea.verou.me" rel="noopener" target="_blank">Lea Verou</a>
-		&bull; <a href="https://www.w3.org/TR/WCAG/#contrast-minimum" rel="noopener" target="_blank">WCAG 2.1 on contrast ratio</a>
-
+		This tool is largely based on the popular WCAG_2 contrast tool by <a href="http://lea.verou.me" rel="noopener" target="_blank">Lea Verou</a>.
+		
+		<p style="font-size: 11pt;">It is modified for <a href="http://" rel="noopener" target="_blank">"Bridge PCA" by Myndex</a>, the reason we chose this as the basis was to provide a familiar tool to demonstrate Bridge PCA.</p>
 	</footer>
 </section>
 <section class="color-display" id="foregroundDisplay">
 	<button id="swap">↔ Swap colors</button>
-	<script async src="https://cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=contrastratiocom" id="_carbonads_js"></script>
 </section>
 
 <footer></footer>
@@ -56,21 +63,10 @@
 <script src="color.js"></script>
 <script src="contrast-ratio.js"></script>
 
-<div class="social">
-	<a class="github-button" href="https://github.com/leaverou/contrast-ratio" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star leaverou/contrast-ratio on GitHub">Star</a>
-</div>
 
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-117109922-1', 'auto');
-ga('send', 'pageview');
-</script>
 </body>
 </html>
